@@ -2,16 +2,16 @@
 
 using namespace std;
 
-//50. Pow(x, n)
+// 50. Pow(x, n)
 
 int main(){
     int n = -2;
-    double x = 2.00000;
-    long bin = n;
-    double ans = 1;
+    long double x = 2.00000;
+    long long bin = n;
+    long double ans = 1;
     if (bin<0){
-        bin = -1*bin;
-        x = 1/x;
+        x = 1.0 / x;
+        bin = -bin;
     }
     
     while (bin > 0){
